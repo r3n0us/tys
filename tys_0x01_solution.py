@@ -1,4 +1,4 @@
-#!/usr/bin/env ptyhon
+#!/usr/bin/env python3
 from scapy.all import *
 pkts = rdpcap("tys_0x01_c2.pcapng")
 keys = ""
