@@ -8,8 +8,6 @@ TYS is a series of challenges from Richard Sammet located at  https://mytty.org/
 "Communication in the shadows"   
 ```
 $ python3 tys_0x01_solution.py
-```
-```
 This is a secret message. Evesdropping is not allowed! Stay away!  
 The username is Hans and the password is Wurst
 You can use these credentials to login under https://www.facebook.com/
